@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Kaushan';
+    src: url('../tipografias/KaushanScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratB';
+    src: url('../tipografias/Montserrat-Black.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratM';
+    src: url('../tipografias/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratR';
+    src: url('../tipografias/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

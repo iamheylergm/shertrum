@@ -1,0 +1,114 @@
+.finance-section {
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 3px;
+    text-align: center;
+}
+
+.finance-section h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* espacio entre el icono y el texto */
+}
+
+.finance-title {
+    font-family: 'MontserratB';
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:  #cccccc;
+}
+
+.finance-description {
+    font-family: 'MontserratR';
+    font-size: 16px;
+    margin-bottom: 40px;
+    color:  #cccccc;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wallets-grid {
+    font-family: 'MontserratM';
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    gap: 20px;
+    max-width: 100%;   /* 🔑 asegura que no se desborden */
+    justify-content: center; /* centra las columnas cuando no llenan el espacio */
+}
+
+/* Card */
+.wallet-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%; /* o deja que el grid gestione el ancho de 280px */
+    max-width: 280px; /* coincida con grid-template-columns */
+    margin: 0 auto;
+}
+
+.wallet-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.wallet-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.wallet-name {
+    font-size: 18px;
+    color:  #cccccc;
+    margin-bottom: 10px;
+}
+
+.wallet-address {
+    font-family: 'MontserratR', monospace;
+    font-size: 14px;
+    color:  #cccccc;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    word-break: break-all;
+}
+
+.copy-btn {
+    font-family: 'MontserratM';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #d4af37;
+    color:  #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #b3a85e;
+}
+
+.copy-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+

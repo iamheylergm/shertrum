@@ -1,0 +1,77 @@
+.contact-section {
+    margin: 60px auto;
+    max-width: 600px;
+    text-align: center;
+    color: #cccccc;
+}
+
+.contact-title {
+    font-family: 'MontserratB';
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+/* Tarjeta contenedora */
+.contact-card {
+    background: rgba(255,255,255,0.03);
+    border: 1.5px solid #d4af37; /* borde dorado elegante */
+    border-radius: 20px;
+    padding: 25px 30px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+/* Cada fila (red social o correo) */
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.social-item:last-child {
+    border-bottom: none; /* quita línea final */
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.social-url {
+    font-family: 'MontserratR';
+    font-size: 16px;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    flex-grow: 1;
+}
+
+.social-url:hover {
+    color: #d4af37;
+}
+
+/* Botón copiar */
+.copy-btn {
+    font-family: 'MontserratM';
+    background: none;
+    border: 1px solid #d4af37;
+    color: #cccccc;
+    border-radius: 8px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.copy-btn:hover {
+    background: #d4af37;
+    color: #121212;
+}
