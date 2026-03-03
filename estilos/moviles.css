@@ -307,6 +307,11 @@
         grid-template-columns: 1fr;
         gap: 15px;
     }
+
+    .info-icon {
+        width: 25px;
+        height: 25px;
+    }
     
     .wallet-card {
         max-width: 80%;
