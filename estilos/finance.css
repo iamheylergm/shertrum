@@ -112,3 +112,8 @@
     filter: brightness(0) invert(1);
 }
 
+.info-icon {
+    width: 25px;
+    height: 25px;
+}
+
