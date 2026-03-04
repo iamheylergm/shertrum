@@ -25,7 +25,7 @@
 .edu-category-title {
   font-family: 'MontserratB', sans-serif;
   font-size: 20px;
-  color: #d4af37;
+  color: #cccccc;
   margin-bottom: 12px;
   margin-top: 10px;
   padding-left: 4px;
@@ -107,7 +107,7 @@
 .edu-header {
   max-width: 750px;
   width: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -116,24 +116,25 @@
 .edu-title-row {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
   align-items: center;
+  gap: 12px;
 }
 
 .edu-title {
   font-family: 'MontserratR', sans-serif;
-  font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  text-align: center;
+  font-size: 16px;
+  color: #cccccc;
   line-height: 1.6;
-  margin-top: 2px;
+  margin-top: -10px;
+  max-width: 700px;
 }
 
 .edu-main-title {
   font-family: 'MontserratB', sans-serif;
   font-size: 28px;
   color: #cccccc;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   text-align: center;
 }
 

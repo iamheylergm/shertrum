@@ -207,8 +207,8 @@
     }
     
     .timeline-content {
-        max-width: 110%;
-        width: 110%;
+        max-width: 100%;
+        width: 100%;
         padding: 15px;
     }
     
@@ -312,6 +312,35 @@
     .wallet-card {
         max-width: 80%;
     }
+
+    /* Launches */
+.launches-section {
+    margin: 30px auto !important;
+}
+
+
+
+.launches-title {
+    font-size: 24px;
+}
+
+.launches-grid {
+    gap: 20px;
+}
+
+.launch-card {
+    width: 200px;
+    padding: 30px 20px;
+}
+
+.launch-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.launch-name {
+    font-size: 16px;
+}
     
     /* Contacto */
     .contact-section {

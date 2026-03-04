@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'Kaushan';
-    src: url('../tipografias/KaushanScript-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'MontserratB';
     src: url('../tipografias/Montserrat-Black.ttf') format('truetype');
     font-weight: 500;

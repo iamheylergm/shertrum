@@ -7,7 +7,7 @@
 
 .contact-title {
     font-family: 'MontserratB';
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 30px;
     color: #e0e0e0;
 }
@@ -15,7 +15,7 @@
 /* Tarjeta contenedora */
 .contact-card {
     background: rgba(255,255,255,0.03);
-    border: 1.5px solid #d4af37; /* borde dorado elegante */
+    border: 1px solid rgba(255,255,255,0.12);
     border-radius: 20px;
     padding: 25px 30px;
     backdrop-filter: blur(12px);
@@ -56,22 +56,4 @@
 
 .social-url:hover {
     color: #d4af37;
-}
-
-/* Botón copiar */
-.copy-btn {
-    font-family: 'MontserratM';
-    background: none;
-    border: 1px solid #d4af37;
-    color: #cccccc;
-    border-radius: 8px;
-    padding: 5px 12px;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-size: 14px;
-}
-
-.copy-btn:hover {
-    background: #d4af37;
-    color: #121212;
 }

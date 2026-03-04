@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="estilos/contact.css">
     <link rel="stylesheet" href="estilos/menu.css">
     <link rel="stylesheet" href="estilos/moviles.css">
+    <link rel="stylesheet" href="estilos/launches.css">
 
     <script src="archivosjs/codigojs.js" defer></script>
 </head>
@@ -24,7 +25,9 @@
     <!-- Barra de navegación -->
     <nav class="navbar">
         <div class="nav-left">
-            <img src="iconos/logonav.png" alt="Shertrum" class="nav-icon">
+            <a href="index.html" class="nav-logo-link">
+                <img src="iconos/logonav.png" alt="Shertrum" class="nav-icon">
+            </a>
         </div>
         
         <div class="nav-pestanas">
@@ -32,6 +35,7 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#finance">Finance</a></li>
+                <li><a href="#launches">Launches</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -52,6 +56,9 @@
                     </a>
                     <a href="#finance" class="menu-nav-item">
                         <span>Finance</span>
+                    </a>
+                    <a href="#launches" class="menu-nav-item">
+                        <span>Launches</span>
                     </a>
                     <a href="#contact" class="menu-nav-item">
                         <span>Contact</span>
@@ -329,7 +336,7 @@
     </section>
 </div>
 
-        <!-- Financiar -->
+        <!-- Finance -->
         <div id="finance" class="tab-pane">
         <section id="financiar" class="finance-section">
             <h2 class="finance-title">Donate to the Project</h2>
@@ -367,6 +374,14 @@
                     <h3 class="wallet-name">Bitcoin Cash</h3>
                     <div class="wallet-address">bitcoincash:qz03tnpcyeqn9dt5693nd67kmfdj62pew5dd8dnsy7</div>
                     <button class="copy-btn" onclick="copyToClipboard('bitcoincash:qz03tnpcyeqn9dt5693nd67kmfdj62pew5dd8dnsy7')">
+                    <img src="iconos/copiar.png" alt="Copiar" class="copy-icon"> Copy</button>
+                </div>
+
+                <div class="wallet-card"> <!-- Card 5 -->
+                    <img src="iconos/ton.png" alt="Toncoin" class="wallet-icon">
+                    <h3 class="wallet-name">Toncoin</h3>
+                    <div class="wallet-address">UQDjGSffZuSHSdYtBXGsABw1JIAiWzloRjoJdot8Z75ygdnf</div>
+                    <button class="copy-btn" onclick="copyToClipboard('UQDjGSffZuSHSdYtBXGsABw1JIAiWzloRjoJdot8Z75ygdnf')">
                     <img src="iconos/copiar.png" alt="Copiar" class="copy-icon"> Copy</button>
                 </div>
 
@@ -423,6 +438,37 @@
         </section>
         </div>
 
+        <!-- Launches -->
+        <div id="launches" class="tab-pane">
+            <section class="launches-section">
+                <h2 class="launches-title">Launches</h2>
+                <p class="launches-subtitle">Upcoming releases from Shertrum Technologies.</p>
+
+                <div class="launches-grid">
+
+                    <!-- Card App futura -->
+                    <div class="launch-card">
+                        <div class="launch-badge">Coming Soon</div>
+                        <img src="iconos/siaraapp.jpg" alt="App" class="launch-icon">
+                        <h3 class="launch-name">Siara App</h3>
+                        <p class="launch-desc">Coming soon. More details very soon.</p>
+                    </div>
+
+                </div>
+
+                <div class="launch-socials">
+                    <a class="launch-social-btn">
+                        <img src="iconos/instagram.png" alt="Instagram" class="launch-social-icon">
+                        Instagram
+                    </a>
+                    <a href="https://x.com/SiaraApp" target="_blank" class="launch-social-btn">
+                        <img src="iconos/x.png" alt="Twitter" class="launch-social-icon">
+                        X/Twitter
+                    </a>
+                </div>
+            </section>
+        </div>
+
         <!-- Contact -->
         <div id="contact" class="tab-pane">
             <section class="contact-section">
@@ -446,6 +492,11 @@
                 </div>
             </section>
         </div>
+</div>
+
+<div class="toast" id="toast">
+    <img src="iconos/copiar.png" alt="✓" class="toast-icon">
+    <span class="toast-text">¡Copiado!</span>
 </div>
 <div class="menu-overlay" id="menuOverlay"></div>
 </body>
