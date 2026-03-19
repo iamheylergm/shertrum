@@ -1,0 +1,120 @@
+.nav-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón */
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+/* Hover solo al icono */
+.menu-button .menu-icon {
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.menu-button .menu-icon:hover {
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.6));
+    transform: scale(1.1);
+}
+
+
+/* Iconos */
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Dropdown base (oculto al inicio) */
+.menu-content {
+    position: absolute;
+    right: -15px;
+    margin-top: 15px;
+    min-width: 250px;
+    max-width: 90vw;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+    z-index: 20;
+
+    /* fondo glass */
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.12);
+
+    /* efecto vidrio líquido */
+    box-shadow:
+        0 12px 30px rgba(2,6,23,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.03),
+        inset 0 -6px 24px rgba(0,0,0,0.25);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    isolation: isolate;
+
+    /* animación (oculto por defecto) */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Menisco superior */
+.menu-content::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 6px;
+    height: 42%;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.03));
+    opacity: 0.65;
+    pointer-events: none;
+    filter: blur(8px);
+    mix-blend-mode: screen;
+}
+
+/* Links */
+.menu-content a {
+    font-family: 'MontserratM', sans-serif;
+    color: #cccccc;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    max-width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.menu-content a:hover {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(4px);
+    transform: translateX(3px);
+}
+
+/* Estado activo (visible) */
+.nav-menu.active .menu-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Separador dentro del menú */
+.menu-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 6px 0;
+}
+
+/* Links de navegación dentro del menú */
+.menu-nav-links {
+    display: none; /* oculto en desktop */
+}

@@ -1,0 +1,142 @@
+/* Barra de navegación estilo liquid glass */
+.navbar {
+    position: sticky;
+    top: 20px;
+    margin: 0 auto;
+    max-width: 75%;
+    width: 75%;
+    padding: 0 16px 0 0; /* ajusta padding para que todo quepa */
+    height: 60px; /* 🔹 altura fija de la barra */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.12);
+
+    /* sombras externas e internas para sensación líquida */
+    box-shadow:
+    0 12px 30px rgba(2,6,23,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.03),
+    inset 0 -6px 24px rgba(0,0,0,0.25);
+
+    /* glass / liquid look */
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    isolation: isolate;
+    z-index: 16; /* mayor que cualquier card */
+}
+
+/* Capa superior tipo menisco (brillo en la parte superior) */
+.navbar::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 6px;
+    height: 42%;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.03));
+    opacity: 0.65;
+    pointer-events: none;
+    filter: blur(8px);
+    mix-blend-mode: screen;
+}
+
+.navbar > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo + nombre */
+.nav-left {
+    margin-left: -30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-icon {
+    height: 120px;  /* 🔹 sube el tamaño del logo */
+    max-height: 120px; /* 🔹 evita que crezca demasiado */
+}
+
+.nav-brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-pestanas {
+    margin-right: 80px;
+}
+
+/* Links */
+.nav-links {
+    font-family: 'MontserratR';
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-links li a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover */
+.nav-links li a:hover {
+    color: #d4af37; /* dorado */
+    transform: scale(1.05);
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+    transform: scale(1.05);
+}
+
+/* Pestaña activa */
+.nav-links li a.active {
+    color:  #d4af37;
+}
+
+.nav-links li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* separación de la línea */
+    width: 100%;
+    height: 3px;
+    background:  #94894c; /* verdeazul */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Menú */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Icono de Menú */
+.menu-icon {
+    width: 24px;
+    cursor: pointer;
+    filter: brightness(0) invert(1); /* fuerza blanco */
+}
