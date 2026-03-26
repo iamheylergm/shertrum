@@ -79,7 +79,7 @@
 /* Etiqueta Coming Soon */
 .launch-badge {
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 16px;
     background: rgba(212,175,55,0.15);
     border: 1px solid rgba(212,175,55,0.5);
@@ -89,14 +89,16 @@
     padding: 4px 10px;
     border-radius: 50px;
     letter-spacing: 0.5px;
+    z-index: 10;
 }
 
 /* Icono */
 .launch-icon {
     width: 90px;
     height: 90px;
+    border-radius: 20px;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
 }
 
